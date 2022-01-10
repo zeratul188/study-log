@@ -1,0 +1,91 @@
+h1 {
+    font-size: 30px;
+    color: #FE6E0E;
+}
+
+a:hover {
+    color: #FE6E0E;
+    font-size: 40px;
+}
+
+a {
+    color: #FF0000;
+    font-size: 20px;
+}
+
+li, p {
+    font-size: 20px;
+    color: #00FF00;
+    background-color: #000000;
+}
+
+#first {
+    font-size: 30px;
+    color: #FFFFFF;
+    background-color: #FF0000;
+}
+
+.second {
+    font-size: 15px;
+    color: #8888FF;
+    margin-right: 10vw;
+}
+
+.alert {
+    font-style: italic;
+    float: right;
+}
+
+#list li {
+    font-size: 20px;
+    background-color: #FF8888;
+}
+
+#list > li {
+    font-size: 30px;
+    background-color: #1D0256;
+}
+
+* {
+    color: #AAAAAA;
+}
+
+body {
+    background-color: #444444;
+}
+
+img[alt="Metroid"] {
+    border: 5px solid black;
+}
+
+img[alt="Lostark"] {
+    border: 5px solid white;
+}
+
+#test1 div, #test1 .relative-block{
+    border-radius: 5px;
+    width: 200px;
+    height: 200px;
+    text-align: center;
+}
+
+#test1 div:nth-of-type(odd){
+    background-color: #000000;
+}
+
+.relative-block {
+    border: 2px dashed #FF0000;
+}
+
+.relative-block code {
+    position: relative;
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    left: 50px;
+    top: 50px;
+    display: block;
+    width: 200px;
+    text-align: center;
+    height: 200px;
+    color: #000000;
+}
