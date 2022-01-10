@@ -1,0 +1,120 @@
+html, body {
+    margin: 0;
+    height: 100%;
+}
+
+.head {
+    position: relative;
+    height: 5%;
+}
+
+#left-content {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    padding-left: 15px;
+}
+
+#right-content {
+    height: 100%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    right: 0;
+    padding-right: 15px;
+}
+
+.head div span {
+    font-size: 13px;
+}
+
+.container {
+    height: 87%;
+    display: table;
+    margin: auto;
+    vertical-align: middle;
+}
+
+.container > div {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.input-text {
+    width: 500px;
+    border: 1px solid #999999;
+    padding: 10px;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+}
+
+.input-text > #tool {
+    width: 20px;
+    margin-right: 5px;
+}
+
+.input-text > #tool:last-of-type {
+    width: 12px;
+    margin-right: 0;
+}
+
+.input-text > #search-text {
+    width: 428px;
+    border: 0px;
+}
+
+.input-text > #search-text:focus {
+    width: 410px;
+    outline: none;
+}
+
+.buttons {
+    margin-top: 20px;
+}
+
+.buttons > #button {
+    border-radius: 5px;
+    background-color: #F6F6F6;
+    border: 1px solid #F6F6F6;
+    height: 40px;
+}
+
+footer {
+    height: 8%;
+    background-color: #F2F2F2;
+    position: relative;
+}
+
+footer #top-footer {
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+    border-bottom: 1px solid #D8D8D8;
+    height: 50%;
+}
+
+footer #bottom-footer {
+    height: 50%;
+}
+
+footer #bottom-footer > #footer-left-content {
+    height: 50%;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    padding-left: 15px;
+}
+
+footer #bottom-footer > #footer-right-content {
+    height: 50%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    right: 0;
+    padding-right: 15px;
+}
