@@ -17,10 +17,13 @@ null 값은 undefined와 다르게 의도적으로 값이 없을을 표현할 �
 let k;
 console.log(k);
 
-let o = undefined;
+let o = undefined; 
 console.log(o);
 
 let title = "Bootcamp";
 console.log(title);
 title = null;
 console.log(title);
+
+console.log(true || true);
+console.log(false || false);
