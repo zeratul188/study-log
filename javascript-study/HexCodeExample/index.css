@@ -1,0 +1,17 @@
+body {
+    display: table;
+    background-color: #FFFFFF;
+    margin: auto;
+    vertical-align: middle;
+    height: 100vh;
+}
+
+body * {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.btn-change {
+    margin-top: 20px;
+}
