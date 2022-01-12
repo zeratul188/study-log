@@ -1,0 +1,57 @@
+body {
+  background-image: url("./images/bg.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Varela Round", sans-serif;
+}
+
+h1 {
+  font-family: "Pacifico", cursive;
+  text-align: center;
+  font-size: 72px;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+}
+
+.center-container {
+  display: table;
+  width: 100%;
+  height: 100%;
+}
+
+.center-container * {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.center-container img {
+  width: 90%;
+}
+
+.center-container button {
+  background-color: transparent !important;
+  border-color: transparent;
+  color: blue;
+  font-size: 20px;
+  text-align: center;
+  width: 5%;
+}
+
+.center-container button:hover {
+  cursor: pointer;
+}
+
+.dots {
+  width: 100%;
+  height: 30px;
+  padding: 10px;
+  text-align: center;
+}
+
+.dots * {
+  display: inline-block;
+  vertical-align: middle;
+}
