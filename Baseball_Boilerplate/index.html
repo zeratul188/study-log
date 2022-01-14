@@ -11,7 +11,7 @@
       href="https://fonts.googleapis.com/css?family=Varela+Round&display=swap"
       rel="stylesheet"
     />
-    <link rel="icon" href="/images/favicon.ico" />
+    <link rel="icon" href="images/favicon.ico" />
     <link rel="stylesheet" type="text/css" href="style.css" />
     <title>Baseball Project</title>
   </head>
@@ -19,12 +19,38 @@
   <body>
     <section>
       <div class="image-box">
-        <img src="images/vanilla_coding_logo.png" />
+        <img src="images/vanilla_coding_logo.png" style="width: 30%;" />
       </div>
       <h1>Baseball</h1>
 
       <!-- 야구게임 Start -->
-
+      <div class="container">
+        <button class="btn-start">Start</button>
+        <div id="progress1">
+          <div class="txt-info">세 가지 숫자를 입력하세요.</div>
+          <div class="inputs">
+            <input type="number" name="num1" id="num1" min="1" max="9" class="input-start-data"
+              onkeyup="this.value = this.value.replace(/[^0-9]/g, '');">
+            <input type="number" name="num2" id="num2" min="1" max="9" class="input-start-data"
+            onkeyup="this.value = this.value.replace(/[^0-9]/g, '');">
+            <input type="number" name="num3" id="num3" min="1" max="9" class="input-start-data"
+            onkeyup="this.value = this.value.replace(/[^0-9]/g, '');">
+          </div>
+          <button class="btn-next" id="btn-next" style="margin-top: 30px;">다음</button>
+        </div>
+        <div id="progress2">
+          <div class="txt-info">맞출 세 가지 숫자를 입력하세요.</div>
+          <div class="inputs">
+            <input type="number" name="answer-num1" id="answer-num1" min="1" max="9" class="input-start-data"
+            onkeyup="this.value = this.value.replace(/[^0-9]/g, '');">
+            <input type="number" name="answer-num2" id="answer-num2" min="1" max="9" class="input-start-data"
+            onkeyup="this.value = this.value.replace(/[^0-9]/g, '');">
+            <input type="number" name="answer-num3" id="answer-num3" min="1" max="9" class="input-start-data"
+            onkeyup="this.value = this.value.replace(/[^0-9]/g, '');">
+          </div>
+          <button class="btn-next" id="btn-result" style="margin-top: 30px; width: 130px;">결과 보기</button>
+        </div>
+      </div>
       <!-- 야구게임 End -->
     </section>
 
