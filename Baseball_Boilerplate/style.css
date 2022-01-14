@@ -8,5 +8,63 @@ body {
 h1 {
   font-family: "Pacifico", cursive;
   text-align: center;
-  font-size: 72px;
+  font-size: 36px;
+}
+
+.container {
+  width: 100%;
+  text-align: center;
+}
+
+.btn-start {
+  background-color: #FF0000;
+  border: 3px solid #FF0000;
+  border-radius: 10px;
+  width: 100px;
+  height: 50px;
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+.btn-next {
+  background-color: #6666FF;
+  border: 3px solid #6666FF;
+  border-radius: 10px;
+  width: 100px;
+  height: 50px;
+  font-size: 20px;
+  font-weight: bolder;
+  color: #FFFFFF;
+}
+
+.btn-next:hover {
+  cursor: pointer;
+  background-color: #6666CC;
+  border: 3px solid #6666CC;
+}
+
+.btn-start:hover {
+  cursor: pointer;
+  background-color: #CC0000;
+  border: 3px solid #CC0000;
+}
+
+.txt-info {
+  margin-top: 50px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.input-start-data {
+  width: 30px;
+  height: 30px;
+  font-size: 20px;
+  background-color: transparent;
+  border-left-color: transparent;
+  border-right-color: transparent;
+  border-top-color: transparent;
+}
+
+#progress1, #progress2 {
+  display: none;
 }
