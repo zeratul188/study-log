@@ -59,6 +59,7 @@ function syncCalender() {
     for (let i = 0; i < tdDays.length; i++) {
         if (i < now.getDay() || day > lastDay) {
             tdDays[i].textContent = '';
+            tdDays[i].style.visibility = 'hidden';
         } else {
             if (isSameMY && day === nowDate) {
                 tdDays[i].style.color = 'red';
@@ -67,6 +68,7 @@ function syncCalender() {
             }
             tdDays[i].textContent = day;
             day++;
+            tdDays[i].style.visibility = 'visible';
         }
     }
     now.setDate(undoDate);
