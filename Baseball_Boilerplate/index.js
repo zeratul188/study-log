@@ -1,12 +1,15 @@
 var progressLayout1 = document.getElementById('progress1');
 var progressLayout2 = document.getElementById('progress2');
+var txtInfo = document.querySelectorAll('.txt-info');
 
 var btnStart = document.querySelector('.btn-start');
 var inputs = [];
+var limit = 0;
 
 btnStart.addEventListener('click', function onClick(obj) {
     obj.target.style.display = 'none';
     progressLayout1.style.display = 'inline';
+    limit = 0;
 });
 
 var btnNext = document.getElementById('btn-next');
@@ -36,6 +39,16 @@ btnResult.addEventListener('click', function onClick() {
     for (let i = 1; i <= 3; i++) {
         answers.push(document.querySelector('#answer-num'+i).value);
     }
+    for (var answer of answers) {
+        if (answer === '') {
+            alert('비어있는 값이 있습니다.');
+            return;
+        }
+    }
+    if (checkDouble(answers)) {
+        alert('중복된 값이 존재합니다.');
+        return;
+    }
     let ball = 0;
     let strike = 0;
     for (let position = 0; position < answers.length; position++) {
@@ -52,8 +65,13 @@ btnResult.addEventListener('click', function onClick() {
         }
     }
 
+    limit++;
+    txtInfo[1].textContent = '맞출 세 가지 숫자를 입력하세요. ('+limit+'/10)';
     alert(result(strike, ball));
     if (result(strike, ball) === '승리!!') {
+        gameover();
+    } else if (limit === 10) {
+        alert("제한 횟수를 초과하였습니다.");
         gameover();
     }
 });
@@ -61,6 +79,11 @@ btnResult.addEventListener('click', function onClick() {
 function gameover() {
     progressLayout2.style.display = 'none';
     btnStart.style.display = 'inline';
+    btnStart.textContent = "재시작";
+    for (let i = 1; i <= 3; i++) {
+        document.querySelector('#answer-num'+i).value = '';
+        document.querySelector('#num'+i).value = '';
+    }
 }
 
 function result(strike, ball) {
